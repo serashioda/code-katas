@@ -11,7 +11,7 @@
 #
 # Test.it("returns a list that misses only one element")
 # for i in xrange(10):
-#     arr = randlist()
+#     arr = randli
 #     Test.assert_equals(len(remove_smallest(arr[:])), len(arr) - 1, "Wrong sized result for {}".format(arr))
 
 
@@ -19,15 +19,27 @@
 import pytest
 
 MIN_TABLE = [
-    [[[1, 2, 3, 4, 5]), [2, 3, 4, 5]], "Wrong result for [1, 2, 3, 4, 5]],
-    [[[5, 3, 2, 1, 4]), [5, 3, 2, 4]], Wrong result for [5, 3, 2, 1, 4],
-    [[[1, 2, 3, 1, 1]), [2, 3, 1, 1]], "Wrong result for [1, 2, 3, 1, 1],
-    [[[]], []], "Wrong result for []
+    [[[1, 2, 3, 4, 5]], [2, 3, 4, 5], "Wrong result for [1, 2, 3, 4, 5]],
+    [[[5, 3, 2, 1, 4]], [5, 3, 2, 4], Wrong result for [5, 3, 2, 1, 4]],
+    [[[1, 2, 3, 1, 1]], [2, 3, 1, 1], "Wrong result for [1, 2, 3, 1, 1]],
+    [[[]], [], "Wrong result for []]
 ]
 
 
 @pytest.mark.parametrize("numbers, result", MIN_TABLE)
-def remove_smallest(numbers, result):
+def test_remove_min(numbers, result):
     """Test the remove_smallest function."""
     from remove_min import remove_smallest
     assert remove_smallest(numbers) == result
+
+"""
+# Test.describe("remove_smallest")
+#
+# Test.it("works for the examples")
+# Test.assert_equals(remove_smallest([1, 2, 3, 4, 5]), [2, 3, 4, 5], "Wrong result for [1, 2, 3, 4, 5]")
+# Test.assert_equals(remove_smallest([5, 3, 2, 1, 4]), [5, 3, 2, 4], "Wrong result for [5, 3, 2, 1, 4]")
+# Test.assert_equals(remove_smallest([1, 2, 3, 1, 1]), [2, 3, 1, 1], "Wrong result for [1, 2, 3, 1, 1]")
+# Test.assert_equals(remove_smallest([]), [], "Wrong result for []")
+#
+# from numpy.random import randint
+"""

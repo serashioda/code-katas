@@ -2,7 +2,7 @@
 
 def remove_smallest(numbers):
     """takes an array of integers and remove one of the smallest numbers(s). """
-     try:
+    try:
         numbers.remove(min(numbers))
     except ValueError:
         pass

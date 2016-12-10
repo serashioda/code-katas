@@ -2,15 +2,15 @@
 import pytest
 
 MULT_TABLE = [
-    [[1, 2, 3, 4, 5], 15],
-    [[1, -2, 3, 4, 5], 13],
-    [[-1, 2, 3, 4, -5], 9],
-    [[-1, -4, -7], 0]
+    [[2, 3], 6],
+    [[-2, 3], -6],
+    [[11, 5], 55],
+    [[3, 0], 0]
 ]
 
 
-@pytest.mark.parametrize("lst, result", MULT_TABLE)
-def test_sum_multiply(lst, result):
+@pytest.mark.parametrize("a, b, result", MULT_TABLE)
+def test_multiply(a, b, result):
     """Test the multiply function."""
     from multiply import multiply
-    assert multiply(lst) == result
+    assert multiply(a, b) == result

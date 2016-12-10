@@ -6,9 +6,9 @@ Repo containing my solutions from Code War katas.
 - MODULE: multiply.py
 - TESTS: test_sum_multiply.py
 - LINK:
-- Interesting solution by ____:
+- Interesting solution by jihygk:
 - """
-
+multiply = __import__('operator').mul
 - """
 
 ###7kyu
@@ -17,7 +17,8 @@ Repo containing my solutions from Code War katas.
 ###Decending Order:
 - MODULE: decending_order.py
 - TESTS: test_decending_order.py
-- LINK:
+- LINK: https://www.codewars.com/kata/remove-the-minimum
+- https://www.codewars.com/kata/563cf89eb4747c5fb100001b/solutions/python/me/best_practice
 - Interesting solution by Edwin.01:
 - """ def Descending_Order(num):
 -    return int(''.join(str(x) for x in sorted(str(num))[::-1]))
@@ -25,12 +26,16 @@ Repo containing my solutions from Code War katas.
 
 
 ###Remove the Minimum:
-- MODULE: ______.py
-- TESTS: test____________.py
-- LINK:
-- Interesting solution by _____:
+- MODULE: remove_min.py
+- TESTS: test_remove.min.py
+- LINK: https://www.codewars.com/kata/remove-the-minimum/
+- https://www.codewars.com/kata/563cf89eb4747c5fb100001b/solutions/python/me/best_practice
+- Interesting solution by Streetmentioner, Emigre, syim, JustyFY, MMMAAANNN, doublenns (plus 94 more warriors):
 - """
-
+def remove_smallest(numbers):
+    if numbers:
+        numbers.remove(min(numbers))
+    return numbers
 - """
 
 
@@ -80,16 +85,16 @@ def xo(s):
 - """
 def find_short(s):
     return min(len(x) for x in s.split())
-
 - """
 
 
 ###6kyu
 
 ###Find the Odd Int:
-- MODULE: ______.py
-- TESTS: test____________.py
-- LINK:
+- MODULE: find_odd_int.py
+- TESTS: test_find_odd_int.py
+- LINK: https://www.codewars.com/kata/find-the-odd-int/train/python
+- https://www.codewars.com/kata/54da5a58ea159efa38000836/solutions/python/me/best_practice
 - Interesting solution by Unnamed:
 - """
 import operator
@@ -103,8 +108,7 @@ def find_it(xs):
 - MODULE: count_bits.py
 - TESTS: test_count_bits.py
 - LINK: https://www.codewars.com/kata/bit-counting
-- Interesting solution by NTERESTING
-xcthulhu, hiasen, RM84, mpeddle, nickie, npd (plus 361 more warriors):
+- Interesting solution by NTERESTING, xcthulhu, hiasen, RM84, mpeddle, nickie, npd (plus 361 more warriors):
 - """
 def countBits(n):
     return bin(n).count("1")
