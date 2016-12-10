@@ -6,7 +6,7 @@ Repo containing my solutions from Code War katas.
 - MODULE: multiply.py
 - TESTS: test_sum_multiply.py
 - LINK:
-- Interesting solution by ____:
+- Interesting solution by [____]
 """
 
 """
