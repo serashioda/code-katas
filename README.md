@@ -9,7 +9,7 @@ Repo containing my solutions from Code War katas.
 - Interesting solution by ____:
 - """
 
-"""
+- """
 
 ###7kyu
 
@@ -29,6 +29,20 @@ Repo containing my solutions from Code War katas.
 - Interesting solution by _____:
 - """
 
+- """
+
+###Money, Money, Money:
+- MODULE: ______.py
+- TESTS: test____________.py
+- LINK:
+- Interesting solution by CrazyMerlyn:
+- """
+from math import ceil, log
+
+def calculate_years(principal, interest, tax, desired):
+    if principal >= desired: return 0
+
+    return ceil(log(float(desired) / principal, 1 + interest * (1 - tax)))
 - """
 
 
