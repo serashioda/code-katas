@@ -7,7 +7,7 @@ Repo containing my solutions from Code War katas.
 - TESTS: test_sum_multiply.py
 - LINK:
 - Interesting solution by ____:
-"""
+- """
 
 """
 
@@ -17,7 +17,7 @@ Repo containing my solutions from Code War katas.
 - MODULE: decending_order.py
 - TESTS: test_decending_order.py
 - LINK:
-- Interesting solution by Edwin.01:
+- Interesting solution by Edwin.01]
 """ def Descending_Order(num):
     return int(''.join(str(x) for x in sorted(str(num))[::-1]))
 """
@@ -29,4 +29,4 @@ Repo containing my solutions from Code War katas.
 - Interesting solution by _____:
 """
 
-"""
+- """
