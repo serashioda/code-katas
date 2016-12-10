@@ -1,6 +1,6 @@
 Repo containing my solutions from Code War katas.
 
-###8th kyu*
+###8th kyu
 
 ####Multiply:
 - MODULE: multiply.py
@@ -8,7 +8,7 @@ Repo containing my solutions from Code War katas.
 - LINK:
 - Interesting solution by
 
-###7th kyu*
+###7th kyu
 
 ###Decending Order:
 MODULE: decending_order.py
@@ -17,7 +17,7 @@ LINK:
 - Interesting solution by
 
 
-###Decending Order:*
+###Decending Order:
 MODULE: ______.py
 TESTS: test____________.py
 LINK:
