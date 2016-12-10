@@ -11,4 +11,3 @@ def calculate_years(principal, interest, tax, desired):
         years += 1
 
     return years
-    

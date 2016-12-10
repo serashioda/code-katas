@@ -1,23 +1,33 @@
-Test.describe("remove_smallest")
+# from numpy.random import randint
+#
+# def randlist():
+#     return list(randint(400, size=randint(1, 10)))
+#
+#
+# Test.it("returns [] if list has only one element")
+# for i in xrange(10):
+#     x = randint(1, 400)
+#     Test.assert_equals(remove_smallest([x]), [], "Wrong result for [{}]".format(x))
+#
+# Test.it("returns a list that misses only one element")
+# for i in xrange(10):
+#     arr = randlist()
+#     Test.assert_equals(len(remove_smallest(arr[:])), len(arr) - 1, "Wrong sized result for {}".format(arr))
 
-Test.it("works for the examples")
-Test.assert_equals(remove_smallest([1, 2, 3, 4, 5]), [2, 3, 4, 5], "Wrong result for [1, 2, 3, 4, 5]")
-Test.assert_equals(remove_smallest([5, 3, 2, 1, 4]), [5, 3, 2, 4], "Wrong result for [5, 3, 2, 1, 4]")
-Test.assert_equals(remove_smallest([1, 2, 3, 1, 1]), [2, 3, 1, 1], "Wrong result for [1, 2, 3, 1, 1]")
-Test.assert_equals(remove_smallest([]), [], "Wrong result for []")
 
-from numpy.random import randint
+""Tests for remove_min module."""
+import pytest
 
-def randlist():
-    return list(randint(400, size=randint(1, 10)))
+MIN_TABLE = [
+    [[[1, 2, 3, 4, 5]), [2, 3, 4, 5]], "Wrong result for [1, 2, 3, 4, 5]],
+    [[[5, 3, 2, 1, 4]), [5, 3, 2, 4]], Wrong result for [5, 3, 2, 1, 4],
+    [[[1, 2, 3, 1, 1]), [2, 3, 1, 1]], "Wrong result for [1, 2, 3, 1, 1],
+    [[[]], []], "Wrong result for []
+]
 
 
-Test.it("returns [] if list has only one element")
-for i in xrange(10):
-    x = randint(1, 400)
-    Test.assert_equals(remove_smallest([x]), [], "Wrong result for [{}]".format(x))
-
-Test.it("returns a list that misses only one element")
-for i in xrange(10):
-    arr = randlist()
-    Test.assert_equals(len(remove_smallest(arr[:])), len(arr) - 1, "Wrong sized result for {}".format(arr))
+@pytest.mark.parametrize("numbers, result", MIN_TABLE)
+def remove_smallest(numbers, result):
+    """Test the remove_smallest function."""
+    from remove_min import remove_smallest
+    assert remove_smallest(numbers) == result

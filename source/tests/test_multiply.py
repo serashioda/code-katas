@@ -1,7 +1,7 @@
 ""Tests for multiply module."""
 import pytest
 
-LIST_TABLE = [
+MULT_TABLE = [
     [[1, 2, 3, 4, 5], 15],
     [[1, -2, 3, 4, 5], 13],
     [[-1, 2, 3, 4, -5], 9],
@@ -9,7 +9,7 @@ LIST_TABLE = [
 ]
 
 
-@pytest.mark.parametrize("lst, result", LIST_TABLE)
+@pytest.mark.parametrize("lst, result", MULT_TABLE)
 def test_sum_multiply(lst, result):
     """Test the multiply function."""
     from multiply import multiply
