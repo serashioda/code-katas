@@ -17,10 +17,10 @@ Repo containing my solutions from Code War katas.
 - MODULE: decending_order.py
 - TESTS: test_decending_order.py
 - LINK:
-- Interesting solution by Edwin.01]
-""" def Descending_Order(num):
-    return int(''.join(str(x) for x in sorted(str(num))[::-1]))
-"""
+- Interesting solution by Edwin.01:
+- """ def Descending_Order(num):
+-    return int(''.join(str(x) for x in sorted(str(num))[::-1]))
+- """
 
 ###Remove the Minimum:
 - MODULE: ______.py
