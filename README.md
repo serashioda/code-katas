@@ -1,6 +1,6 @@
 Repo containing my solutions from Code War katas.
 
-###8th kyu
+###8kyu
 
 ####Multiply:
 - MODULE: multiply.py
@@ -11,7 +11,7 @@ Repo containing my solutions from Code War katas.
 
 """
 
-###7th kyu
+###7kyu
 
 ###Decending Order:
 - MODULE: decending_order.py
@@ -22,11 +22,24 @@ Repo containing my solutions from Code War katas.
     return int(''.join(str(x) for x in sorted(str(num))[::-1]))
 """
 
-###Decending Order:
+###Remove the Minimum:
 - MODULE: ______.py
 - TESTS: test____________.py
 - LINK:
 - Interesting solution by _____:
-"""
+- """
 
+- """
+
+
+###6kyu Find the Odd Int:
+- MODULE: ______.py
+- TESTS: test____________.py
+- LINK:
+- Interesting solution by Unnamed:
+- """
+import operator
+
+def find_it(xs):
+    return reduce(operator.xor, xs)
 - """

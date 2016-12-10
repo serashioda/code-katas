@@ -1,4 +1,4 @@
-""" Finds an integer apparing an odd number of times. """
+""" Implementation of the Kata Find the Odd Int. """
 
 def find_it(seq):
     """ returns only number appearing odd number of times. """
