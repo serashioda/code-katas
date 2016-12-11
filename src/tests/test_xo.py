@@ -1,11 +1,10 @@
 """Tests for shortest_word module."""
 import pytest
 
-
 XO_TABLE = [
-    [['xo'], True],
-    [['xo0'], True],
-    [['xxxoo'], False]
+    ['xo', True],
+    ['xo0', True],
+    ['xxxoo', False]
 ]
 
 

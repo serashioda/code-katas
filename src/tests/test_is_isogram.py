@@ -2,12 +2,12 @@
 import pytest
 
 ISO_TABLE = [
-    [["Dermatoglyphics"], True],
-    [["isogram"], True]],
-    [["aba"], False, "same chars may not be adjacent"],
-    [["moOse"], False, "same chars may not be same case"],
-    [["isIsogram"], False ],
-    [[""], True, "an empty string is a valid isogram"]
+    ["Dermatoglyphics", True],
+    ["isogram", True],
+    ["aba", False],
+    ["moOse", False],
+    ["isIsogram", False],
+    ["", True]
 ]
 
 

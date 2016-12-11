@@ -1,13 +1,12 @@
-"""Tests for count_bits module. """
+"""Tests for count_bits module."""
 import pytest
 
 BITS_TABLE = [
-    [[0], 0],
-    [[4], 1],
-    [[7], 3],
-    [[9], 2],
-    [[10], 2]
-    ]
+    [0, 0],
+    [4, 1],
+    [7, 3],
+    [9, 2],
+]
 
 
 @pytest.mark.parametrize("n, result", BITS_TABLE)
