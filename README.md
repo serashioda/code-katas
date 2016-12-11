@@ -5,7 +5,8 @@ Repo containing my solutions from Code War katas.
 ####Multiply:
 - MODULE: multiply.py
 - TESTS: test_multiply.py
-- LINK: [Multiply - Kata](https://www.codewars.com/kata/multiply/train/python), 
+- LINKS: 
+[Multiply - Kata](https://www.codewars.com/kata/multiply/train/python);
 [Solutions](https://www.codewars.com/kata/50654ddff44f800200000004/solutions/python/me/best_practice)
 - Interesting solution by jihygk:
 ```
@@ -18,7 +19,8 @@ multiply = __import__('operator').mul
 ###Decending Order:
 - MODULE: decending_order.py
 - TESTS: test_decending_order.py
-- LINK: [Decending Order - Kata](https://www.codewars.com/kata/descending-order/train/python),
+- LINKS: 
+[Decending Order - Kata](https://www.codewars.com/kata/descending-order/train/python);
 [Solutions](https://www.codewars.com/kata/5467e4d82edf8bbf40000155/solutions/python/me/best_practice)
 - Interesting solution by Edwin.01:
 ```
@@ -30,7 +32,8 @@ def Descending_Order(num):
 ###Remove the Minimum:
 - MODULE: remove_min.py
 - TESTS: test_remove.min.py
-- LINK: [Remove the Minimum - Kata](https://www.codewars.com/kata/remove-the-minimum/train/python),
+- LINKS: 
+[Remove the Minimum - Kata](https://www.codewars.com/kata/remove-the-minimum/train/python);
 [Solutions](https://www.codewars.com/kata/563cf89eb4747c5fb100001b/solutions/python/me/best_practice)
 - Interesting solution by Streetmentioner, Emigre, syim, JustyFY, MMMAAANNN, doublenns (plus 94 more warriors):
 ```
@@ -44,7 +47,8 @@ def remove_smallest(numbers):
 ###Money, Money, Money:
 - MODULE: calculate_years.py
 - TESTS: test_calculate_years.py
-- LINK: [Money, Money, Money - Kata](https://www.codewars.com/kata/money-money-money/train/python),
+- LINKS: 
+[Money, Money, Money - Kata](https://www.codewars.com/kata/money-money-money/train/python);
 [Solutions](https://www.codewars.com/kata/563f037412e5ada593000114/solutions/python/me/best_practice)
 - Interesting solution by CrazyMerlyn:
 ```
@@ -60,7 +64,8 @@ def calculate_years(principal, interest, tax, desired):
 ###Isograms:
 - MODULE: is_isogram.py
 - TESTS: test_is_isogram.py
-- LINKS: [Isograms - Kata](https://www.codewars.com/kata/isograms/train/python),
+- LINKS: 
+[Isograms - Kata](https://www.codewars.com/kata/isograms/train/python);
 [Solutions](https://www.codewars.com/kata/54ba84be607a92aa900000f1/solutions/python/me/best_practice)
 - Interesting solution by madbook, Kamyk, hiasen, dia_c, staticor, lancelote (plus 76 more warriors):
 ```
@@ -72,7 +77,8 @@ def is_isogram(string):
 ###Exes and Ohs:
 - MODULE: xo.py
 - TESTS: test_xo.py
-- LINKS: [Exes and Ohs - Kata](https://www.codewars.com/kata/exes-and-ohs/train/python),
+- LINKS: 
+[Exes and Ohs - Kata](https://www.codewars.com/kata/exes-and-ohs/train/python);
 [Solutions](https://www.codewars.com/kata/55908aad6620c066bc00002a/solutions/python/me/best_practice)
 - Interesting solution by jolaf, Beast, Tgc, MMMAAANNN, SquishyStrawberry, Devilart (plus 126 more warriors):
 ```
@@ -85,7 +91,8 @@ def xo(s):
 ###Shortest Word:
 - MODULE: shortest_word.py
 - TESTS: test_shortest_word.py
-- LINKS: [Shortest Word - Kata](https://www.codewars.com/kata/shortest-word/train/python),
+- LINKS: 
+[Shortest Word - Kata](https://www.codewars.com/kata/shortest-word/train/python);
 [Solutions](https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9/solutions/python/me/best_practice)
 - Interesting solution by MiraliN, Cptnprice, FranzSchubert92, Chris_Rands, Mr.Child, gallione11 (plus 12 more warriors):
 ```
@@ -100,7 +107,8 @@ def find_short(s):
 ###Find the Odd Int:
 - MODULE: find_odd_int.py
 - TESTS: test_find_odd_int.py
-- LINKS: [Find the Odd Int - Kata](https://www.codewars.com/kata/find-the-odd-int/train/python),
+- LINKS: 
+[Find the Odd Int - Kata](https://www.codewars.com/kata/find-the-odd-int/train/python);
 [Solutions](https://www.codewars.com/kata/54da5a58ea159efa38000836/solutions/python/me/best_practice)
 - Interesting solution by Unnamed:
 ```
