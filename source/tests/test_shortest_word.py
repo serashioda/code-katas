@@ -1,4 +1,4 @@
-""Tests for shortest_word module."""
+"""Tests for shortest_word module. """
 import pytest
 
 SHORT_TABLE = [
@@ -11,7 +11,7 @@ SHORT_TABLE = [
 
 
 @pytest.mark.parametrize("s, result", SHORT_TABLE)
-def find_short(s, result):
+def test_shortest_word(s, result):
     """Test the find_short function."""
     from shortest_word import find_short
     assert find_short(s) == result

@@ -1,5 +1,6 @@
 """Implementation of the Kata Descending_Order."""
 
+
 def Descending_Order(num):
     """takes a non-neg integer and returns its digits in decending order. """
     num_array = list(str(num))

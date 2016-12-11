@@ -1,15 +1,16 @@
-""Tests for shortest_word module."""
+"""Tests for shortest_word module."""
 import pytest
 
+
 XO_TABLE = [
-    [[xo], 'xo'],
-    [[xo], 'xo0']],
-    [[not xo], 'xxxoo']
+    [['xo'], True],
+    [['xo0'], True],
+    [['xxxoo'], False]
 ]
 
 
 @pytest.mark.parametrize("s, result", XO_TABLE)
-def xo(s, result):
+def test_xo(s, result):
     """Test the xo function."""
     from xo import xo
     assert xo(s) == result

@@ -1,4 +1,4 @@
-""Tests for calculate_years module."""
+"""Tests for calculate_years module."""
 import pytest
 
 YEARS_TABLE = [
@@ -9,7 +9,7 @@ YEARS_TABLE = [
 
 
 @pytest.mark.parametrize("principal, interest, tax, desired, result", YEARS_TABLE)
-def calculate_years(principal, interest, tax, desired, result):
+def test_calculate_years(principal, interest, tax, desired, result):
     """Test the calculate_years function."""
     from calculate_years import calculate_years
     assert calculate_years(principal, interest, tax, desired) == result

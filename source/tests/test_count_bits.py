@@ -1,5 +1,17 @@
-test.assert_equals(countBits(0), 0);
-test.assert_equals(countBits(4), 1);
-test.assert_equals(countBits(7), 3);
-test.assert_equals(countBits(9), 2);
-test.assert_equals(countBits(10), 2);
+"""Tests for count_bits module. """
+import pytest
+
+BITS_TABLE = [
+    [[0], 0],
+    [[4], 1],
+    [[7], 3],
+    [[9], 2],
+    [[10], 2]
+    ]
+
+
+@pytest.mark.parametrize("n, result", BITS_TABLE)
+def test_count_bits(n, result):
+    """Test the countBits function."""
+    from count_bits import countBits
+    assert countBits(n) == result

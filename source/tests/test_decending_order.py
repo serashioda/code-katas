@@ -1,4 +1,4 @@
-""Tests for decending_order module."""
+"""Tests for decending_order module."""
 import pytest
 
 LIST_TABLE = [

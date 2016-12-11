@@ -1,4 +1,4 @@
-""Tests for multiply module."""
+"""Tests for multiply module."""
 import pytest
 
 MULT_TABLE = [

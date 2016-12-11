@@ -15,7 +15,7 @@
 #     Test.assert_equals(len(remove_smallest(arr[:])), len(arr) - 1, "Wrong sized result for {}".format(arr))
 
 
-""Tests for remove_min module."""
+"""Tests for remove_min module. """
 import pytest
 
 MIN_TABLE = [

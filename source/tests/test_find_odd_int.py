@@ -1,4 +1,4 @@
-""Tests for find_odd_int module."""
+"""Tests for find_odd_int module."""
 import pytest
 
 FIND_TABLE = [
