@@ -11,7 +11,7 @@ LIST_TABLE = [
 
 
 @pytest.mark.parametrize("num, result", LIST_TABLE)
-def decending_order(num, result):
+def test_decending_order(num, result):
     """Test the decending_order function."""
     from decending_order import decending_order
     assert decending_order(num) == result
