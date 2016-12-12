@@ -11,6 +11,6 @@ BITS_TABLE = [
 
 @pytest.mark.parametrize("n, result", BITS_TABLE)
 def test_count_bits(n, result):
-    """Test the countBits function."""
-    from count_bits import countBits
-    assert countBits(n) == result
+    """Test the count_bits function."""
+    from count_bits import count_bits
+    assert count_bits(n) == result

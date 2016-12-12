@@ -2,5 +2,5 @@
 
 
 def multiply(a, b):
-    """takes two integers and returns its product. """
+    """Take two integers and returns its product."""
     return a * b
