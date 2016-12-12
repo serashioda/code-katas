@@ -105,7 +105,7 @@ def find_short(s):
 - TESTS: test_sum_terms.py
 - LINKS: 
 [Sum of the First nth Term of Series - Kata](http://www.codewars.com/kata/sum-of-the-first-nth-term-of-series/train/python);
-[Solutions](https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9/solutions/python/me/best_practice)
+[Solutions](http://www.codewars.com/kata/555eded1ad94b00403000071/solutions/python/me/best_practice)
 - Interesting solution by MMMAAANNN, doctornick5, Slx64:
 ```
 def series_sum(n):
