@@ -1,8 +1,8 @@
-""" Implementation of the Shortest Word Kata. """
+"""Implementation of the Shortest Word Kata."""
 
 
 def find_short(s):
-    """ returns the shortest word out of a string of words. """
+    """Return the shortest word out of a string of words."""
     shortest = 999999999
 
     words = s.split(' ')
