@@ -101,7 +101,7 @@ def find_short(s):
 ```
 
 ###Sum of the first nth term of Series:
- MODULE: sum_terms.py
+- MODULE: sum_terms.py
 - TESTS: test_sum_terms.py
 - LINKS: 
 [Sum of the First nth Term of Series - Kata](http://www.codewars.com/kata/sum-of-the-first-nth-term-of-series/train/python);
