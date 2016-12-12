@@ -1,4 +1,4 @@
-"""Implementation ofthe Kata multiply."""
+"""Implementation of the Kata multiply."""
 
 
 def multiply(a, b):
