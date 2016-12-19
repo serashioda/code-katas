@@ -1,5 +1,8 @@
 """Tests for parenthetics module."""
+
+
 import pytest
+
 
 PAREN_TABLE = [
     ['((()))', 0],
