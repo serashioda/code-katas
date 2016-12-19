@@ -16,7 +16,7 @@ multiply = __import__('operator').mul
 ###7kyu
 
 
-###Decending Order:
+####Decending Order:
 - MODULE: decending_order.py
 - TESTS: test_decending_order.py
 - LINKS: 
@@ -29,7 +29,7 @@ def Descending_Order(num):
 ```
 
 
-###Remove the Minimum:
+####Remove the Minimum:
 - MODULE: remove_min.py
 - TESTS: test_remove.min.py
 - LINKS: 
@@ -44,7 +44,7 @@ def remove_smallest(numbers):
 ```
 
 
-###Money, Money, Money:
+####Money, Money, Money:
 - MODULE: calculate_years.py
 - TESTS: test_calculate_years.py
 - LINKS: 
@@ -61,7 +61,7 @@ def calculate_years(principal, interest, tax, desired):
 ```
 
 
-###Isograms:
+####Isograms:
 - MODULE: is_isogram.py
 - TESTS: test_is_isogram.py
 - LINKS: 
@@ -74,7 +74,7 @@ def is_isogram(string):
 ```
 
 
-###Exes and Ohs:
+####Exes and Ohs:
 - MODULE: xo.py
 - TESTS: test_xo.py
 - LINKS: 
@@ -88,7 +88,7 @@ def xo(s):
 ```
 
 
-###Shortest Word:
+####Shortest Word:
 - MODULE: shortest_word.py
 - TESTS: test_shortest_word.py
 - LINKS: 
@@ -104,7 +104,7 @@ def find_short(s):
 ###6kyu
 
 
-###Find the Odd Int:
+####Find the Odd Int:
 - MODULE: find_odd_int.py
 - TESTS: test_find_odd_int.py
 - LINKS: 
@@ -129,3 +129,13 @@ def find_it(xs):
 def countBits(n):
   return bin(n).count("1")
 ```
+
+
+###Other
+
+
+####Interview Challenge: Proper Parenthetics
+- Module: proper-parenthetics.py
+- TESTS: test_proper-parenthetics.py
+- LINKS: None.
+- DERIVED FROM: [data-structures repo. Specifically stack branch](https://github.com/ellezv/data_structures/tree/stack), collaborated with Maelle Vance.
