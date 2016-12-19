@@ -22,14 +22,9 @@ def parenthetics(uni_string):
 class Stack(object):
     """Create stack of parenthetics."""
 
-    def __init__(self, iterable=None):
+    def __init__(self):
         """Create a new stack, from LinkedList using composition."""
         self._linkedlist = LinkedList()
-        if iterable and hasattr(iterable, "__iter__"):
-            for item in iterable:
-                self.push(item)
-        elif iterable:
-            raise TypeError
 
     def push(self, value):
         """Push a new value on top of the stack."""
@@ -59,15 +54,9 @@ class Node():
 class LinkedList():
     """Instantiate a Linked List."""
 
-    def __init__(self, iterable=None):
+    def __init__(self):
         """Instantiate an empty Linked list."""
         self.head = None
-
-        if iterable and hasattr(iterable, "__iter__"):
-            for item in iterable:
-                self.push(item)
-        elif iterable:
-            raise TypeError
 
     def push(self, val):
         """Push a new node as the head of the linked list."""
