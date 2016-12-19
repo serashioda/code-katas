@@ -119,7 +119,7 @@ def find_it(xs):
 ```
 
 
-###Bit Counting:
+####Bit Counting:
 - MODULE: count_bits.py
 - TESTS: test_count_bits.py
 - LINKS: [Bit Counting - Kata](https://www.codewars.com/kata/bit-counting/train/python),
