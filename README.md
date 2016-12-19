@@ -1,4 +1,4 @@
-Repo containing my solutions from Code War katas.
+Repo containing my solutions from Code Katas.
 
 ###8kyu
 
