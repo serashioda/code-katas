@@ -147,8 +147,6 @@ def countBits(n):
 - LINKS: None.
 
 
-### COVERAGE:
-
 ---------- coverage: platform darwin, python 3.5.2-final-0 -----------
 Name                                Stmts   Miss  Cover   Missing
 -----------------------------------------------------------------
