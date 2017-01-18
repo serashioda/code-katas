@@ -147,6 +147,10 @@ def countBits(n):
 - LINKS: None.
 
 
+###COVERAGE
+
+```
+
 ---------- coverage: platform darwin, python 3.5.2-final-0 -----------
 Name                                Stmts   Miss  Cover   Missing
 -----------------------------------------------------------------
@@ -182,6 +186,7 @@ TOTAL                                 224     21    91%
 
 
 ===================== 45 passed in 0.38 seconds =====================
+```
 
 
 
