@@ -139,3 +139,51 @@ def countBits(n):
 - TESTS: test_proper-parenthetics.py
 - LINKS: None.
 - DERIVED FROM: [data-structures repo. Specifically stack branch](https://github.com/ellezv/data_structures/tree/stack), collaborated with Maelle Vance.
+
+
+####Autocomplete
+- Module: autocomplete.py
+- TESTS: test_autocomplete.py
+- LINKS: None.
+
+
+### COVERAGE:
+
+---------- coverage: platform darwin, python 3.5.2-final-0 -----------
+Name                                Stmts   Miss  Cover   Missing
+-----------------------------------------------------------------
+src/autocomplete.py                    13      0   100%
+src/calculate_years.py                  8      0   100%
+src/count_bits.py                       5      0   100%
+src/decending_order.py                  6      6     0%   4-10
+src/find_odd_int.py                     4      0   100%
+src/is_isogram.py                       8      0   100%
+src/multiply.py                         2      0   100%
+src/parenthetics.py                    48      0   100%
+src/remove_min.py                       6      0   100%
+src/shortest_word.py                    7      0   100%
+src/sort_cards.py                      34     13    62%   11-12, 22, 28-32, 36-38, 51-52
+src/sum_terms.py                        2      0   100%
+src/tests/__init__.py                   0      0   100%
+src/tests/test_autocomplete.py          7      0   100%
+src/tests/test_calculate_years.py       5      0   100%
+src/tests/test_count_bits.py            5      0   100%
+src/tests/test_decending_order.py       5      2    60%   16-17
+src/tests/test_find_odd_int.py          5      0   100%
+src/tests/test_is_isogram.py            5      0   100%
+src/tests/test_multiply.py              5      0   100%
+src/tests/test_parenthetics.py         12      0   100%
+src/tests/test_remove_min.py            5      0   100%
+src/tests/test_shortest_word.py         5      0   100%
+src/tests/test_sort_cards.py            7      0   100%
+src/tests/test_sum_terms.py             5      0   100%
+src/tests/test_xo.py                    5      0   100%
+src/xo.py                               5      0   100%
+-----------------------------------------------------------------
+TOTAL                                 224     21    91%
+
+
+===================== 45 passed in 0.38 seconds =====================
+
+
+
