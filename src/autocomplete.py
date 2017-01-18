@@ -10,7 +10,7 @@ class AutoCompleter():
         self.max_completions = max_completions
 
     def complete(self, term):
-        """Auto complete method."""
+        """Match terms to max of 4 words, then append and return."""
         suggested_words = []
         n = len(term)
         for word in self.vocabulary:
