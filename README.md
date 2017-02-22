@@ -134,7 +134,7 @@ def countBits(n):
 - MODULE: string_pyramid.py
 - TESTS: test_string_pyramid.py
 - LINKS: [String Pyramid - Kata](http://www.codewars.com/kata/string-pyramid/train/python),
-[Solutions](https://www.codewars.com/kata/526571aae218b8ee490006f4/solutions/python/me/best_practice)
+[Solutions](http://www.codewars.com/kata/5797d1a9c38ec2de1f00017b/solutions/python/all/clever)
 - Interesting solution by lechevalier:
 ```
 def watch_pyramid_from_the_side(c, i=1, acc=[]):
