@@ -49,10 +49,45 @@ def test_count_all_none():
 
 
 def test_pyramid_from_side_handles_two_characters():
-    """Test watch_pyramid_from_the_side can handl 2 character case."""
+    """Test watch_pyramid_from_the_side can handle 2 character case."""
     assert watch_pyramid_from_the_side('*#') == ' # \n***'
 
 
 def test_pyramid_from_above_handles_two_characters():
-    """Test watch_pyramid_from_above can handl 2 character case."""
+    """Test watch_pyramid_from_above can handle 2 character case."""
     assert watch_pyramid_from_above('*#') == '***\n*#*\n***'
+
+
+def test_count_visible_characters_of_the_pyramid_two():
+    """Test count_visible_characters_of_the_pyramid works with 2 characters."""
+    assert count_visible_characters_of_the_pyramid('*#') == 9
+
+
+def test_count_all_characters_of_the_pyramid_two():
+    """Test count_all_characters_of_the_pyramid works with 2 characters."""
+    assert count_all_characters_of_the_pyramid('*#') == 10
+
+
+def test_pyramid_from_side_handles_three_characters():
+    """Test watch_pyramid_from_the_side can handl 3 character case."""
+    assert watch_pyramid_from_the_side('abc') == '  c  \n bbb \naaaaa'
+
+
+def test_pyramid_from_above_handles_three_characters():
+    """Test watch_pyramid_from_above can handl 3 character case."""
+    assert watch_pyramid_from_above('abc') == '''\
+aaaaa
+abbba
+abcba
+abbba
+aaaaa'''
+
+
+def test_count_visible_characters_of_the_pyramid_three():
+    """Test count_visible_characters_of_the_pyramid works with 3 characters."""
+    assert count_visible_characters_of_the_pyramid('abc') == 25
+
+
+def test_count_all_characters_of_the_pyramid_three():
+    """Test count_all_characters_of_the_pyramid works with 3 characters."""
+    assert count_all_characters_of_the_pyramid('abc') == 35
