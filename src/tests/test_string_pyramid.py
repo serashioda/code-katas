@@ -53,6 +53,13 @@ def test_pyramid_from_side_handles_two_characters():
     assert watch_pyramid_from_the_side('*#') == ' # \n***'
 
 
+def test_print_side_two_descending():
+    """Test that print from the side works on two descending characters."""
+    result = watch_pyramid_from_the_side('21')
+    expected = ' 1 \n222'
+    assert result == expected
+
+
 def test_pyramid_from_above_handles_two_characters():
     """Test watch_pyramid_from_above can handle 2 character case."""
     assert watch_pyramid_from_above('*#') == '***\n*#*\n***'
