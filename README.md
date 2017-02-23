@@ -175,5 +175,5 @@ def count_all_characters_of_the_pyramid(c):
 - Reference module: shortest_path_stack_linked_lst.py
 - JSON data: flight_paths.json
 - TESTS: test_flight_paths.py
-- CREDIT: Haversine Formula derived from [Stack Overflow- Haversine Formula in Python (Bearing and Distance between two GPS points)](stackoverflow.com/questions/4913349/haversine-formula-in-python-bearing-and-distance-between-two-gps-points)
+- CREDIT: Haversine Formula derived from [Stack Overflow- Haversine Formula in Python (Bearing and Distance between two GPS points)](http://stackoverflow.com/questions/4913349/haversine-formula-in-python-bearing-and-distance-between-two-gps-points)
 - LINKS: [ASSIGNMENT LINK](https://codefellows.github.io/sea-python-401d5/assignments/kata_flight_paths.html)
