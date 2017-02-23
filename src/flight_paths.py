@@ -1,6 +1,6 @@
 """Implementation of the flight path module."""
 from math import radians, cos, sin, asin, sqrt
-from shortest_path_stack import Graph
+from shortest_path_stack_linked_lst import Graph
 import json
 
 '''
