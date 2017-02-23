@@ -1,8 +1,138 @@
-"""Module with implementation of Weighted Graph."""
-from my_queue import Queue
-from stack import Stack
+"""Module with implementation of Linked List, Stack and Weighted Graph."""
+#from my_queue import Queue
 from collections import OrderedDict
 import sys
+
+
+#------------------------Linked List--------------------------
+class LinkedList(object):
+    """Classic linked list data structure."""
+
+    def __init__(self, iterable=None):
+        """Initialize LinkedList instance."""
+        self.head = None
+        self._length = 0
+        try:
+            for el in iterable:
+                self.push(el)
+        except TypeError:
+            self.head = iterable
+
+    def push(self, val):
+        """Insert val at the head of linked list."""
+        self.head = Node(val, self.head)
+        self._length += 1
+
+    def pop(self):
+        """Pop the first value off of the head and return it."""
+        if self.head is None:
+            raise IndexError("Cannot pop from an empty linked list.")
+        first = self.head.val
+        self.head = self.head.next
+        self._length -= 1
+        return first
+
+    def size(self):
+        """Return length of linked list."""
+        return self._length
+
+    def search(self, val):
+        """Will return the node from the list if present, otherwise none."""
+        search = self.head
+        while search:
+            if search.val == val:
+                return search
+            search = search.next
+        return None
+
+    def remove(self, node):
+        """Remove a node from linked list."""
+        if type(node) is Node:
+            prev = None
+            curr = self.head
+            while curr:
+                if curr is node:
+                    if prev:
+                        prev.next = curr.next
+                    else:
+                        self.head = curr.next
+                    self._length -= 1
+                    break
+                prev = curr
+                curr = curr.next
+            else:
+                raise ValueError("Cannot remove node not in list.")
+        else:
+            raise ValueError("Argument to remove must be of node type.")
+
+    def display(self):
+        """Display linked list in tuple literal form."""
+        res = "("
+        curr = self.head
+        while curr:
+            val = curr.val
+            if type(val) is str:
+                val = "'" + val + "'"
+            else:
+                val = str(val)
+            res += val
+            if curr.next:
+                res += ', '
+            curr = curr.next
+        return res + ')'
+
+    def __len__(self):
+        """Return length of linked_list."""
+        return self.size()
+
+    def __repr__(self):
+        """Shortcut for displaying representation of list."""
+        return self.display()
+
+
+#------------------------Stack--------------------------
+
+
+class Node(object):
+    """Node class."""
+
+    def __init__(self, val, next=None):
+        """Initialize Node instance."""
+        self.val = val
+        self.next = next
+
+class Stack(object):
+    """Stack data structure class."""
+
+    def __init__(self, iterable=None):
+        """Stack constructor."""
+        self._linkedlist = LinkedList(iterable)
+        self._update_attr()
+
+    def push(self, val):
+        """Add value to top of stack."""
+        self._linkedlist.push(val)
+        self._update_attr()
+
+    def pop(self):
+        """Remove and return top of stack."""
+        try:
+            res = self._linkedlist.pop()
+            self._update_attr()
+            return res
+        except IndexError:
+            raise IndexError("Cannot pop from empty stack.")
+
+    def size(self):
+        """Return size of stack."""
+        return self._linkedlist.size()
+
+    def __len__(self):
+        """Return size of stack with len builtin."""
+        return self.size()
+
+    def _update_attr(self):
+        self.top = self._linkedlist.head
 
 
 class Graph(object):
@@ -91,22 +221,22 @@ class Graph(object):
             raise KeyError(str(start) + ' not in graph')
         return res
 
-    def breadth_first_traversal(self, start):
-        """Breadth version of graph traversal."""
-        try:
-            res = []
-            queue = Queue([start])
-            track = set()
-            while queue.head:
-                cur_node = queue.dequeue()
-                if cur_node not in track:
-                    res.append(cur_node)
-                    track.add(cur_node)
-                    for child in self.node_dict[cur_node]:
-                        queue.enqueue(child)
-        except KeyError:
-            raise KeyError(str(start) + ' not in graph')
-        return res
+    # def breadth_first_traversal(self, start):
+    #     """Breadth version of graph traversal."""
+    #     try:
+    #         res = []
+    #         queue = Queue([start])
+    #         track = set()
+    #         while queue.head:
+    #             cur_node = queue.dequeue()
+    #             if cur_node not in track:
+    #                 res.append(cur_node)
+    #                 track.add(cur_node)
+    #                 for child in self.node_dict[cur_node]:
+    #                     queue.enqueue(child)
+    #     except KeyError:
+    #         raise KeyError(str(start) + ' not in graph')
+    #     return res
 
     def depth_first_traversal_iterative(self, start):
         """Breadth version of graph traversal."""
@@ -185,49 +315,3 @@ class Graph(object):
                 start = path_dict[start][end]
                 path.append(start)
             return path
-
-
-# ---------Time It-----------
-
-
-# if __name__ == '__main__':  # pragma: no cover
-#     import random
-
-#     graph = Graph()
-#     for i in range(100):
-#         try:
-#             graph.add_edge(random.randint(0, 20),
-#                            random.randint(0, 20),
-#                            random.randint(0, 5))
-#         except:
-#             pass
-
-#     if len(sys.argv) > 1 and sys.argv[1] == 'timeit':
-#         import timeit
-#         from pprint import pprint
-
-#         start = graph.nodes()[random.randint(0, len(graph.nodes()))]
-
-#         #pprint(graph.node_dict)
-
-#         depth = timeit.timeit(
-#             stmt="graph.depth_first_traversal(start)",
-#             setup="from __main__ import graph, start",
-#             number=1000,
-#         )
-#         depth_i = timeit.timeit(
-#             stmt="graph.depth_first_traversal_iterative(start)",
-#             setup="from __main__ import graph, start",
-#             number=1000,
-#         )
-#         breadth = timeit.timeit(
-#             stmt="graph.breadth_first_traversal(start)",
-#             setup="from __main__ import graph, start",
-#             number=1000,
-#         )
-#         # print('\n1000 recursive depth first traversals:\n\t{} seconds\n'.format(depth) +
-#         #       '\tPath: {}\n'.format(graph.depth_first_traversal(start)) +
-#         #       '\n1000 iterative depth first traversals:\n\t{} seconds\n'.format(depth_i) +
-#         #       '\tPath: {}\n'.format(graph.depth_first_traversal_iterative(start)) +
-#         #       '\n1000 breadth first traversals:\n\t{} seconds\n'.format(breadth) +
-#         #       '\tPath: {}\n'.format(graph.breadth_first_traversal(start)))
