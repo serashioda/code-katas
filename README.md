@@ -168,4 +168,4 @@ def count_all_characters_of_the_pyramid(c):
 - Module: forbes.py
 - JSON data: forbes.json
 - TESTS: test_forbes.py
-- LINKS: None.
+- LINKS: [ASSIGNMENT LINK](https://codefellows.github.io/sea-python-401d5/assignments/kata_forbes_billionaires.html)
