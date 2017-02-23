@@ -163,3 +163,9 @@ def count_all_characters_of_the_pyramid(c):
 - TESTS: test_proper-parenthetics.py
 - LINKS: None.
 - DERIVED FROM: [data-structures repo. Specifically stack branch](https://github.com/ellezv/data_structures/tree/stack), collaborated with Maelle Vance.
+
+####Python Practice: The Forbes Top 40
+- Module: forbes.py
+- JSON data: forbes.json
+- TESTS: test_forbes.py
+- LINKS: None.
