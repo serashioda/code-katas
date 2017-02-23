@@ -1,4 +1,3 @@
-# -*- coding: UTF-8 -*-
 """Tests for forbes implementation."""
 import pytest
 from forbes import *
