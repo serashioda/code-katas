@@ -161,7 +161,7 @@ def count_all_characters_of_the_pyramid(c):
 ####Interview Challenge: Proper Parenthetics
 - Module: proper-parenthetics.py
 - TESTS: test_proper-parenthetics.py
-- LINKS: None.
+- LINKS: [ASSIGNMENT LINK](https://codefellows.github.io/sea-python-401d5/assignments/proper_parenthetics.html?highlight=proper%20paren)
 - DERIVED FROM: [data-structures repo. Specifically stack branch](https://github.com/ellezv/data_structures/tree/stack), collaborated with Maelle Vance.
 
 ####Python Practice: The Forbes Top 40
