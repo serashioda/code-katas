@@ -100,6 +100,18 @@ def find_short(s):
   return min(len(x) for x in s.split())
 ```
 
+###Sum of the first nth term of Series:
+- MODULE: sum_terms.py
+- TESTS: test_sum_terms.py
+- LINKS: 
+[Sum of the First nth Term of Series - Kata](http://www.codewars.com/kata/sum-of-the-first-nth-term-of-series/train/python);
+[Solutions](http://www.codewars.com/kata/555eded1ad94b00403000071/solutions/python/me/best_practice)
+- Interesting solution by MMMAAANNN, doctornick5, Slx64:
+```
+def series_sum(n):
+    return '{:.2f}'.format(sum(1.0/(3 * i + 1) for i in range(n)))
+```
+
 
 ###6kyu
 
@@ -187,6 +199,3 @@ TOTAL                                 224     21    91%
 
 ===================== 45 passed in 0.38 seconds =====================
 ```
-
-
-
