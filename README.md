@@ -161,5 +161,19 @@ def count_all_characters_of_the_pyramid(c):
 ####Interview Challenge: Proper Parenthetics
 - Module: proper-parenthetics.py
 - TESTS: test_proper-parenthetics.py
-- LINKS: None.
+- LINKS: [ASSIGNMENT LINK](https://codefellows.github.io/sea-python-401d5/assignments/proper_parenthetics.html?highlight=proper%20paren)
 - DERIVED FROM: [data-structures repo. Specifically stack branch](https://github.com/ellezv/data_structures/tree/stack), collaborated with Maelle Vance.
+
+####Python Practice: The Forbes Top 40
+- Module: forbes.py
+- JSON data: forbes.json
+- TESTS: test_forbes.py
+- LINKS: [ASSIGNMENT LINK](https://codefellows.github.io/sea-python-401d5/assignments/kata_forbes_billionaires.html)
+
+####Python Practice: Distance Between Points
+- Module: flight_paths.py
+- Reference module: shortest_path_stack_linked_lst.py
+- JSON data: flight_paths.json
+- TESTS: test_flight_paths.py
+- CREDIT: Haversine Formula derived from [Stack Overflow- Haversine Formula in Python (Bearing and Distance between two GPS points)](http://stackoverflow.com/questions/4913349/haversine-formula-in-python-bearing-and-distance-between-two-gps-points)
+- LINKS: [ASSIGNMENT LINK](https://codefellows.github.io/sea-python-401d5/assignments/kata_flight_paths.html)

@@ -1,4 +1,4 @@
-forbes.json[
+[
     {
         "name": "Bill Gates",
         "age": 60,
@@ -318,5 +318,5 @@ forbes.json[
         "net_worth (USD)": 17500000000,
         "source": "Microsoft, investments",
         "country": "United States"
-    },
+    }
 ]
