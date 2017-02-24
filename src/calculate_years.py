@@ -2,7 +2,7 @@
 
 
 def calculate_years(principal, interest, tax, desired):
-    """ caculates how many years it take to reach desired principle. """
+    """Caculate how many years it take to reach desired principle."""
     years = 0
     while (principal < desired):
         accrued = principal * interest
