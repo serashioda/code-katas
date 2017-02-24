@@ -1,10 +1,9 @@
 """Module with implementation of Linked List, Stack and Weighted Graph."""
-#from my_queue import Queue
 from collections import OrderedDict
 import sys
 
 
-#------------------------Linked List--------------------------
+# ------------------------Linked List--------------------------
 class LinkedList(object):
     """Classic linked list data structure."""
 
@@ -90,7 +89,7 @@ class LinkedList(object):
         return self.display()
 
 
-#------------------------Stack--------------------------
+# ------------------------Stack--------------------------
 
 
 class Node(object):
@@ -100,6 +99,7 @@ class Node(object):
         """Initialize Node instance."""
         self.val = val
         self.next = next
+
 
 class Stack(object):
     """Stack data structure class."""
@@ -221,23 +221,6 @@ class Graph(object):
             raise KeyError(str(start) + ' not in graph')
         return res
 
-    # def breadth_first_traversal(self, start):
-    #     """Breadth version of graph traversal."""
-    #     try:
-    #         res = []
-    #         queue = Queue([start])
-    #         track = set()
-    #         while queue.head:
-    #             cur_node = queue.dequeue()
-    #             if cur_node not in track:
-    #                 res.append(cur_node)
-    #                 track.add(cur_node)
-    #                 for child in self.node_dict[cur_node]:
-    #                     queue.enqueue(child)
-    #     except KeyError:
-    #         raise KeyError(str(start) + ' not in graph')
-    #     return res
-
     def depth_first_traversal_iterative(self, start):
         """Breadth version of graph traversal."""
         try:
@@ -256,7 +239,7 @@ class Graph(object):
         return res
 
     def dijkstra(self, start, end):
-        """Dykstras shortest path implementation."""
+        """Dykstra shortest path implementation."""
         unvisited = self.nodes()
         distance = {}
         previous = {}
@@ -308,10 +291,11 @@ class Graph(object):
         return path_dict, distance
 
     def floyd_warshall_path(self, path_dict, start, end):
-            if path_dict[start][end] is None:
-                return []
-            path = [start]
-            while start != end:
-                start = path_dict[start][end]
-                path.append(start)
-            return path
+        """Return shortest_path ufing floyd_warshall."""
+        if path_dict[start][end] is None:
+            return []
+        path = [start]
+        while start != end:
+            start = path_dict[start][end]
+            path.append(start)
+        return path
