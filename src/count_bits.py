@@ -1,3 +1,4 @@
+
 """Implemntation of the Bit Counting Kata."""
 
 
