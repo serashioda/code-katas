@@ -24,6 +24,9 @@ var/
 .installed.cfg
 *.egg
 bin/
+lib/
+include/
+.DS_Store
 pyvenv.cfg
 
 # PyInstaller
