@@ -27,6 +27,7 @@ bin/
 lib/
 include/
 .DS_Store
+pyvenv.cfg
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
