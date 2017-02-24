@@ -83,10 +83,3 @@ class LinkedList():
                 curr = curr.next
             return size
         return 0
-
-    
-    
-    # --------
-# CCallahanIV - Ted's version:
-
-# return 1 if num_opening > num_closing else 0
