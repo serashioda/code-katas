@@ -1,4 +1,4 @@
-Repo containing my solutions from Code War katas.
+Repo containing my solutions from Code Katas.
 
 ###8kyu
 
@@ -141,3 +141,14 @@ def find_it(xs):
 def countBits(n):
   return bin(n).count("1")
 ```
+
+
+###Other
+
+
+####Interview Challenge: Proper Parenthetics
+- Module: proper-parenthetics.py
+- TESTS: test_proper-parenthetics.py
+- LINKS: None.
+- DERIVED FROM: [data-structures repo. Specifically stack branch](https://github.com/ellezv/data_structures/tree/stack), collaborated with Maelle Vance.
+

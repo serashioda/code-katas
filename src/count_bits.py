@@ -1,4 +1,5 @@
-"""Implementation of the Bit Counting Kata."""
+
+"""Implemntation of the Bit Counting Kata."""
 
 
 def count_bits(n):
