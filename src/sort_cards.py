@@ -1,5 +1,6 @@
 """Implementation of the Sort Cards Kata."""
 
+
 class PriorityQueue(object):
     """Priority list queue."""
 
@@ -17,7 +18,7 @@ class PriorityQueue(object):
 
     def insert(self, data, priority=0):
         """Test insert into pq."""
-        self.num_items+1
+        self.num_items + 1
         if priority in self.queues:
             self.queues[priority].insert(0, data)
         else:
@@ -25,7 +26,7 @@ class PriorityQueue(object):
 
     def pop(self):
         """Test pop from pq."""
-        self.length-1
+        self.length - 1
         for priority in sorted(self.queues):
             if len(self.queues[priority]) > 0:
                 return self.queues[priority].pop()

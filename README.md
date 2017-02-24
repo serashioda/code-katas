@@ -1,4 +1,4 @@
-Repo containing my solutions from Code War katas.
+Repo containing my solutions from Code Katas.
 
 ###8kyu
 
@@ -140,4 +140,52 @@ def find_it(xs):
 ```
 def countBits(n):
   return bin(n).count("1")
+  
+
+####String Pyramid:
+- MODULE: string_pyramid.py
+- TESTS: test_string_pyramid.py
+- LINKS: [String Pyramid - Kata](http://www.codewars.com/kata/string-pyramid/train/python),
+[Solutions](http://www.codewars.com/kata/5797d1a9c38ec2de1f00017b/solutions/python/all/clever)
+- Interesting solution by lechevalier:
 ```
+def watch_pyramid_from_the_side(c, i=1, acc=[]):
+    if c == None: return c
+    if not c: return '\n'.join(acc)
+    return watch_pyramid_from_the_side(c[:-1], i+2, [' '+l+' 'for l in acc]+[c[-1]*i])
+
+def watch_pyramid_from_above(c, i=1, acc=[]):
+    if c == None: return c
+    if not c: return '\n'.join(acc)
+    return watch_pyramid_from_above(c[:-1], i+2, [c[-1] * i] + [c[-1]+l+c[-1] for l in acc] + [c[-1] * i] * bool(acc))
+
+def count_visible_characters_of_the_pyramid(c):
+    return c and (2*len(c)-1)**2 or -1
+
+def count_all_characters_of_the_pyramid(c):
+    return c and (4*len(c)**3-len(c))//3 or -1
+```
+
+
+###Other
+
+
+####Interview Challenge: Proper Parenthetics
+- Module: proper-parenthetics.py
+- TESTS: test_proper-parenthetics.py
+- LINKS: [ASSIGNMENT LINK](https://codefellows.github.io/sea-python-401d5/assignments/proper_parenthetics.html?highlight=proper%20paren)
+- DERIVED FROM: [data-structures repo. Specifically stack branch](https://github.com/ellezv/data_structures/tree/stack), collaborated with Maelle Vance.
+
+####Python Practice: The Forbes Top 40
+- Module: forbes.py
+- JSON data: forbes.json
+- TESTS: test_forbes.py
+- LINKS: [ASSIGNMENT LINK](https://codefellows.github.io/sea-python-401d5/assignments/kata_forbes_billionaires.html)
+
+####Python Practice: Distance Between Points
+- Module: flight_paths.py
+- Reference module: shortest_path_stack_linked_lst.py
+- JSON data: flight_paths.json
+- TESTS: test_flight_paths.py
+- CREDIT: Haversine Formula derived from [Stack Overflow- Haversine Formula in Python (Bearing and Distance between two GPS points)](http://stackoverflow.com/questions/4913349/haversine-formula-in-python-bearing-and-distance-between-two-gps-points)
+- LINKS: [ASSIGNMENT LINK](https://codefellows.github.io/sea-python-401d5/assignments/kata_flight_paths.html)

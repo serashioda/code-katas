@@ -3,6 +3,7 @@
 
 def is_isogram(string):
     """Tell if a string is a isogram, word that has no repeating letters."""
+
     string = string.lower()
 
     if len(string) == 0:
