@@ -51,6 +51,8 @@ def get_airport(data, city):
 
 def find_shortest_path(source, destination, data):
     """Find the shortest path between two existing points, otherwise raise exception."""
+    if source is None or destination is None or data is None:
+        raise ValueError("Invalid arguments")
     g = Graph()
     for airport in data:
         g.add_node(airport['airport'])
@@ -69,7 +71,7 @@ def find_shortest_path(source, destination, data):
     # Dictionary is packed, ready for depth finding
     path = g.dijkstra(destination, source)
     distance = 0
-    for i in range(0, len(path) - 2):
+    for i in range(0, len(path) - 1):
         airport = get_airport(data, path[i])
         d_airport = get_airport(data, path[i + 1])
         distance += haversine(airport['lat_lon'][1], airport['lat_lon'][0], d_airport['lat_lon'][1], d_airport['lat_lon'][0])
