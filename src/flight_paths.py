@@ -53,6 +53,8 @@ def find_shortest_path(source, destination, data):
     """Find the shortest path between two existing points, otherwise raise exception."""
     if source is None or destination is None or data is None:
         raise ValueError("Invalid arguments")
+    if source is '' or destination is ''
+        raise ValueError("source or destination cannot be emptystring.")
     g = Graph()
     for airport in data:
         g.add_node(airport['airport'])
