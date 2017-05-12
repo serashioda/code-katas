@@ -154,6 +154,13 @@ def count_all_characters_of_the_pyramid(c):
     return c and (4*len(c)**3-len(c))//3 or -1
 ```
 
+###5 kyu
+
+###Human Readable Time
+- Module: human_readable.py
+- TESTS: test_human_readable.py
+- LINKS: [Human Readable Time - Kata](https://www.codewars.com/kata/52685f7382004e774f0001f7/train/python)
+
 
 ###Other
 
@@ -177,3 +184,5 @@ def count_all_characters_of_the_pyramid(c):
 - TESTS: test_flight_paths.py
 - CREDIT: Haversine Formula derived from [Stack Overflow- Haversine Formula in Python (Bearing and Distance between two GPS points)](http://stackoverflow.com/questions/4913349/haversine-formula-in-python-bearing-and-distance-between-two-gps-points)
 - LINKS: [ASSIGNMENT LINK](https://codefellows.github.io/sea-python-401d5/assignments/kata_flight_paths.html)
+
+
