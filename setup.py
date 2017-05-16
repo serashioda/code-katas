@@ -9,7 +9,7 @@ setup(
     author="Sera Smith",
     author_email="seras37@gmail.com",
     license='MIT',
-    py_modules=['calculate_years', 'count_bits', 'decending_order', 'find_odd_int', 'is_isogram', 'multiply', 'remove_min', 'shortest_word', 'xo'],
+    py_modules=['auto_complete', 'calculate_years', 'count_bits', 'decending_order', 'find_odd_int', 'flight_paths', 'forbes', 'human_readable', 'is_isogram', 'multiply', 'parenthetics', 'remove_min', 'shortest_word', 'sort_cards', 'string_pyramid', 'sum_terms' 'xo'],
     package_dir={'': 'src'},
     install_requires=['numpy', 'tox'],
     extras_require={

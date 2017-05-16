@@ -82,4 +82,8 @@ class LinkedList():
                 size += 1
                 curr = curr.next
             return size
+<<<<<<< HEAD
         return 0
+=======
+        return 0
+>>>>>>> 790ee32884482d5fc4d246f660e04a03598b5412
