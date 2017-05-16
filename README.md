@@ -100,6 +100,18 @@ def find_short(s):
   return min(len(x) for x in s.split())
 ```
 
+###Sum of the first nth term of Series:
+- MODULE: sum_terms.py
+- TESTS: test_sum_terms.py
+- LINKS: 
+[Sum of the First nth Term of Series - Kata](http://www.codewars.com/kata/sum-of-the-first-nth-term-of-series/train/python);
+[Solutions](http://www.codewars.com/kata/555eded1ad94b00403000071/solutions/python/me/best_practice)
+- Interesting solution by MMMAAANNN, doctornick5, Slx64:
+```
+def series_sum(n):
+    return '{:.2f}'.format(sum(1.0/(3 * i + 1) for i in range(n)))
+```
+
 
 ###6kyu
 
@@ -184,5 +196,4 @@ def count_all_characters_of_the_pyramid(c):
 - TESTS: test_flight_paths.py
 - CREDIT: Haversine Formula derived from [Stack Overflow- Haversine Formula in Python (Bearing and Distance between two GPS points)](http://stackoverflow.com/questions/4913349/haversine-formula-in-python-bearing-and-distance-between-two-gps-points)
 - LINKS: [ASSIGNMENT LINK](https://codefellows.github.io/sea-python-401d5/assignments/kata_flight_paths.html)
-
 

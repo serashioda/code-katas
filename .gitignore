@@ -24,6 +24,7 @@ var/
 .installed.cfg
 *.egg
 bin/
+<<<<<<< HEAD
 lib/
 include/
 .DS_Store
@@ -92,5 +93,3 @@ ENV/
 
 # Rope project settings
 .ropeproject
-
-bin/
