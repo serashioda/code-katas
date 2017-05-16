@@ -1,8 +1,8 @@
 Repo containing my solutions from Code Katas.
 
-###8kyu
+### 8kyu
 
-####Multiply:
+#### Multiply:
 - MODULE: multiply.py
 - TESTS: test_multiply.py
 - LINKS: 
@@ -13,10 +13,10 @@ Repo containing my solutions from Code Katas.
 multiply = __import__('operator').mul
 ```
 
-###7kyu
+### 7 kyu
 
 
-####Decending Order:
+#### Decending Order:
 - MODULE: decending_order.py
 - TESTS: test_decending_order.py
 - LINKS: 
@@ -29,7 +29,7 @@ def Descending_Order(num):
 ```
 
 
-####Remove the Minimum:
+#### Remove the Minimum:
 - MODULE: remove_min.py
 - TESTS: test_remove.min.py
 - LINKS: 
@@ -44,7 +44,7 @@ def remove_smallest(numbers):
 ```
 
 
-####Money, Money, Money:
+#### Money, Money, Money:
 - MODULE: calculate_years.py
 - TESTS: test_calculate_years.py
 - LINKS: 
@@ -61,7 +61,7 @@ def calculate_years(principal, interest, tax, desired):
 ```
 
 
-####Isograms:
+#### Isograms:
 - MODULE: is_isogram.py
 - TESTS: test_is_isogram.py
 - LINKS: 
@@ -74,7 +74,7 @@ def is_isogram(string):
 ```
 
 
-####Exes and Ohs:
+#### Exes and Ohs:
 - MODULE: xo.py
 - TESTS: test_xo.py
 - LINKS: 
@@ -88,7 +88,7 @@ def xo(s):
 ```
 
 
-####Shortest Word:
+#### Shortest Word:
 - MODULE: shortest_word.py
 - TESTS: test_shortest_word.py
 - LINKS: 
@@ -100,7 +100,7 @@ def find_short(s):
   return min(len(x) for x in s.split())
 ```
 
-###Sum of the first nth term of Series:
+### Sum of the first nth term of Series:
 - MODULE: sum_terms.py
 - TESTS: test_sum_terms.py
 - LINKS: 
@@ -113,10 +113,10 @@ def series_sum(n):
 ```
 
 
-###6kyu
+### 6kyu
 
 
-####Find the Odd Int:
+#### Find the Odd Int:
 - MODULE: find_odd_int.py
 - TESTS: test_find_odd_int.py
 - LINKS: 
@@ -131,7 +131,7 @@ def find_it(xs):
 ```
 
 
-####Bit Counting:
+#### Bit Counting:
 - MODULE: count_bits.py
 - TESTS: test_count_bits.py
 - LINKS: [Bit Counting - Kata](https://www.codewars.com/kata/bit-counting/train/python),
@@ -142,7 +142,7 @@ def countBits(n):
   return bin(n).count("1")
 ```
 
-####String Pyramid:
+#### String Pyramid:
 - MODULE: string_pyramid.py
 - TESTS: test_string_pyramid.py
 - LINKS: [String Pyramid - Kata](http://www.codewars.com/kata/string-pyramid/train/python),
@@ -166,30 +166,30 @@ def count_all_characters_of_the_pyramid(c):
     return c and (4*len(c)**3-len(c))//3 or -1
 ```
 
-###5 kyu
+### 5 kyu
 
-###Human Readable Time
+### Human Readable Time
 - Module: human_readable.py
 - TESTS: test_human_readable.py
 - LINKS: [Human Readable Time - Kata](https://www.codewars.com/kata/52685f7382004e774f0001f7/train/python)
 
 
-###Other
+### Other
 
 
-####Interview Challenge: Proper Parenthetics
+#### Interview Challenge: Proper Parenthetics
 - Module: proper-parenthetics.py
 - TESTS: test_proper-parenthetics.py
 - LINKS: [ASSIGNMENT LINK](https://codefellows.github.io/sea-python-401d5/assignments/proper_parenthetics.html?highlight=proper%20paren)
 - DERIVED FROM: [data-structures repo. Specifically stack branch](https://github.com/ellezv/data_structures/tree/stack), collaborated with Maelle Vance.
 
-####Python Practice: The Forbes Top 40
+#### Python Practice: The Forbes Top 40
 - Module: forbes.py
 - JSON data: forbes.json
 - TESTS: test_forbes.py
 - LINKS: [ASSIGNMENT LINK](https://codefellows.github.io/sea-python-401d5/assignments/kata_forbes_billionaires.html)
 
-####Python Practice: Distance Between Points
+#### Python Practice: Distance Between Points
 - Module: flight_paths.py
 - Reference module: shortest_path_stack_linked_lst.py
 - JSON data: flight_paths.json
